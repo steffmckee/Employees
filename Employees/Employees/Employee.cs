@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Employee
+namespace Employees
 {
     partial class Employee
     {
@@ -46,6 +46,11 @@ namespace Employee
         {
             get { return empAge; }
             set { empAge = value; }
+        }
+
+        public string SocialSecurityNumber
+        {
+            get { return empSSN; }
         }
 
         // Methods

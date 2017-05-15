@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Employee
+namespace Employees
 {
     partial class Employee
     {
@@ -13,6 +13,7 @@ namespace Employee
         private int empID;
         private float currPay;
         private int empAge;
+        private string empSSN;
 
         // Constructors.
 
@@ -31,5 +32,9 @@ namespace Employee
             Pay = pay;
         }
 
+        public Employee(string name, int age, int id, float pay, string ssn) : this(name, age, id, pay)
+        {
+            empSSN = ssn;
+        }
     }
 }
